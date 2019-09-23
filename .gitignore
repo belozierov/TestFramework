@@ -81,4 +81,6 @@ Pods/
 !*.xcodeproj/project.pbxproj
 !*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
+!*.xcworkspace/CoreDataJsonParser_Info.plist
+!*.xcworkspace/CoreDataJsonParserTests_Info.plist
 /*.gcno
