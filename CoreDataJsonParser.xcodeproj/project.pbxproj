@@ -1,0 +1,862 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"CoreDataJsonParser::CoreDataJsonParserPackageTests::ProductTarget" /* CoreDataJsonParserPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_31 /* Build configuration list for PBXAggregateTarget "CoreDataJsonParserPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_34 /* PBXTargetDependency */,
+			);
+			name = CoreDataJsonParserPackageTests;
+			productName = CoreDataJsonParserPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1A1DFC232334CBAE006D8C3C /* _JsonDecoderStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DFC222334CBAE006D8C3C /* _JsonDecoderStorage.swift */; };
+		1A1EB91E2333A9B800668C23 /* AttributeModel+ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EB91D2333A9B800668C23 /* AttributeModel+ParseError.swift */; };
+		1A1EB9202333AA1600668C23 /* RelationModel+ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EB91F2333AA1600668C23 /* RelationModel+ParseError.swift */; };
+		1A1EB9222333AC4F00668C23 /* EntityObjectJsonDecoder+ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EB9212333AC4E00668C23 /* EntityObjectJsonDecoder+ParseError.swift */; };
+		1A3719F62313E55500A23F14 /* Json+Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3719DD2313E55500A23F14 /* Json+Subscription.swift */; };
+		1A3719F72313E55500A23F14 /* Json+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3719DE2313E55500A23F14 /* Json+Operators.swift */; };
+		1A3719F82313E55500A23F14 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3719DF2313E55500A23F14 /* Json.swift */; };
+		1A3719F92313E55500A23F14 /* JsonConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3719E02313E55500A23F14 /* JsonConvertable.swift */; };
+		1A3719FD2313E55500A23F14 /* ParsableManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3719E62313E55500A23F14 /* ParsableManagedObject.swift */; };
+		1A371A062313E55500A23F14 /* NSPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3719F12313E55500A23F14 /* NSPredicate.swift */; };
+		1A371A0F2313E6EF00A23F14 /* TestDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A371A0B2313E6EF00A23F14 /* TestDataModel.xcdatamodeld */; };
+		1A371A102313E6EF00A23F14 /* JsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A371A0D2313E6EF00A23F14 /* JsonTests.swift */; };
+		1A415A642338E37C00D4FD84 /* JsonDecoderStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A622338E35B00D4FD84 /* JsonDecoderStorageTests.swift */; };
+		1A415A672338E49A00D4FD84 /* NSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A652338E47400D4FD84 /* NSPersistentContainer.swift */; };
+		1A415A6A2338E4FF00D4FD84 /* TestJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A682338E4B000D4FD84 /* TestJson.swift */; };
+		1A415A6C2338F91100D4FD84 /* EntityModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A6B2338F91100D4FD84 /* EntityModelTests.swift */; };
+		1A415A6E2339025D00D4FD84 /* NSAttributeDescriptionModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A6D2339025D00D4FD84 /* NSAttributeDescriptionModelTests.swift */; };
+		1A415A732339163200D4FD84 /* EntityJsonDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A722339163200D4FD84 /* EntityJsonDecoderTests.swift */; };
+		1A415A752339207200D4FD84 /* JsonDecoderPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A742339207200D4FD84 /* JsonDecoderPathTests.swift */; };
+		1A55202123259A8300D9D79A /* AttributeModel+Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A55202023259A8300D9D79A /* AttributeModel+Decoder.swift */; };
+		1A55202423259AAB00D9D79A /* RelationModel+Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A55202323259AAB00D9D79A /* RelationModel+Decoder.swift */; };
+		1A5520282325A5CB00D9D79A /* JsonDecoderPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5520272325A5CB00D9D79A /* JsonDecoderPath.swift */; };
+		1A55202C23264AE600D9D79A /* JsonDecoderStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A55202B23264AE600D9D79A /* JsonDecoderStorage.swift */; };
+		1A58FA0223244E7500BE09B9 /* AttributeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FA0123244E7500BE09B9 /* AttributeModel.swift */; };
+		1A58FA04232450BD00BE09B9 /* RelationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FA03232450BD00BE09B9 /* RelationModel.swift */; };
+		1A58FA06232458AE00BE09B9 /* EntityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FA05232458AE00BE09B9 /* EntityModel.swift */; };
+		1A58FA082324616200BE09B9 /* EntityObjectJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FA072324616200BE09B9 /* EntityObjectJsonDecoder.swift */; };
+		1A58FA0B2324F10B00BE09B9 /* PropertyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FA0A2324F10B00BE09B9 /* PropertyModel.swift */; };
+		1A58FA0D2324F1CF00BE09B9 /* EntityJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FA0C2324F1CF00BE09B9 /* EntityJsonDecoder.swift */; };
+		1A58FA0F2324F95600BE09B9 /* PropertyModel+Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FA0E2324F95600BE09B9 /* PropertyModel+Attribute.swift */; };
+		1A58FA122324FA5100BE09B9 /* PropertyModel+Relation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FA112324FA5100BE09B9 /* PropertyModel+Relation.swift */; };
+		1A58FA142325516200BE09B9 /* PropertyModel+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FA132325516200BE09B9 /* PropertyModel+Property.swift */; };
+		1A58FA16232551F500BE09B9 /* PropertyModel+Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FA15232551F500BE09B9 /* PropertyModel+Decoder.swift */; };
+		1A6C34EF2322D85100D457F8 /* ManagedObjectJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6C34EE2322D85100D457F8 /* ManagedObjectJsonDecoder.swift */; };
+		1A6C34F32322D8A300D457F8 /* RelationJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6C34F22322D8A300D457F8 /* RelationJsonDecoder.swift */; };
+		1A6C34FA2322DD6000D457F8 /* AttributeJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6C34F92322DD6000D457F8 /* AttributeJsonDecoder.swift */; };
+		1A91865323201AD600B3160E /* NSRelationshipDescription+JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91865223201AD600B3160E /* NSRelationshipDescription+JsonDecoder.swift */; };
+		1A9554ED2339742600495583 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554E32339742600495583 /* Location+CoreDataClass.swift */; };
+		1A9554EE2339742600495583 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554E42339742600495583 /* Location+CoreDataProperties.swift */; };
+		1A9554EF2339742600495583 /* PostSettings+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554E52339742600495583 /* PostSettings+CoreDataClass.swift */; };
+		1A9554F02339742600495583 /* PostSettings+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554E62339742600495583 /* PostSettings+CoreDataProperties.swift */; };
+		1A9554F12339742600495583 /* Profile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554E72339742600495583 /* Profile+CoreDataClass.swift */; };
+		1A9554F22339742600495583 /* Profile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554E82339742600495583 /* Profile+CoreDataProperties.swift */; };
+		1A9554F32339742600495583 /* Media+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554E92339742600495583 /* Media+CoreDataClass.swift */; };
+		1A9554F42339742600495583 /* Media+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554EA2339742600495583 /* Media+CoreDataProperties.swift */; };
+		1A9554F52339742600495583 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554EB2339742600495583 /* Post+CoreDataClass.swift */; };
+		1A9554F62339742600495583 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554EC2339742600495583 /* Post+CoreDataProperties.swift */; };
+		1AE94F8E2323BE4D00EB4114 /* NSAttributeDescription+JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE94F8D2323BE4D00EB4114 /* NSAttributeDescription+JsonDecoder.swift */; };
+		1AE94F912323BF3100EB4114 /* ClosureCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE94F902323BF3100EB4114 /* ClosureCacher.swift */; };
+		1AE94F932323BFE400EB4114 /* NSEntityDescription+JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE94F922323BFE400EB4114 /* NSEntityDescription+JsonDecoder.swift */; };
+		1AE94F952323C00100EB4114 /* NSPropertyDescription+JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE94F942323C00100EB4114 /* NSPropertyDescription+JsonDecoder.swift */; };
+		1AE94F972323D6C800EB4114 /* ValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE94F962323D6C800EB4114 /* ValueTransformer.swift */; };
+		1AF300C6232426F200C62D62 /* JsonDecoderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF300C5232426F200C62D62 /* JsonDecoderError.swift */; };
+		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_40 /* CoreDataJsonParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* CoreDataJsonParserTests.swift */; };
+		OBJ_41 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
+		OBJ_43 /* CoreDataJsonParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "CoreDataJsonParser::CoreDataJsonParser::Product" /* CoreDataJsonParser.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A3719DA2313E54900A23F14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "CoreDataJsonParser::CoreDataJsonParser";
+			remoteInfo = CoreDataJsonParser;
+		};
+		1A371A092313E55600A23F14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "CoreDataJsonParser::CoreDataJsonParserTests";
+			remoteInfo = CoreDataJsonParserTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A1DFC222334CBAE006D8C3C /* _JsonDecoderStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _JsonDecoderStorage.swift; sourceTree = "<group>"; };
+		1A1EB91D2333A9B800668C23 /* AttributeModel+ParseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttributeModel+ParseError.swift"; sourceTree = "<group>"; };
+		1A1EB91F2333AA1600668C23 /* RelationModel+ParseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RelationModel+ParseError.swift"; sourceTree = "<group>"; };
+		1A1EB9212333AC4E00668C23 /* EntityObjectJsonDecoder+ParseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntityObjectJsonDecoder+ParseError.swift"; sourceTree = "<group>"; };
+		1A3719DD2313E55500A23F14 /* Json+Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Json+Subscription.swift"; sourceTree = "<group>"; };
+		1A3719DE2313E55500A23F14 /* Json+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Json+Operators.swift"; sourceTree = "<group>"; };
+		1A3719DF2313E55500A23F14 /* Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		1A3719E02313E55500A23F14 /* JsonConvertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonConvertable.swift; sourceTree = "<group>"; };
+		1A3719E62313E55500A23F14 /* ParsableManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsableManagedObject.swift; sourceTree = "<group>"; };
+		1A3719F12313E55500A23F14 /* NSPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSPredicate.swift; sourceTree = "<group>"; };
+		1A371A0C2313E6EF00A23F14 /* TestDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestDataModel.xcdatamodel; sourceTree = "<group>"; };
+		1A371A0D2313E6EF00A23F14 /* JsonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonTests.swift; sourceTree = "<group>"; };
+		1A415A622338E35B00D4FD84 /* JsonDecoderStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoderStorageTests.swift; sourceTree = "<group>"; };
+		1A415A652338E47400D4FD84 /* NSPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPersistentContainer.swift; sourceTree = "<group>"; };
+		1A415A682338E4B000D4FD84 /* TestJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestJson.swift; sourceTree = "<group>"; };
+		1A415A6B2338F91100D4FD84 /* EntityModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityModelTests.swift; sourceTree = "<group>"; };
+		1A415A6D2339025D00D4FD84 /* NSAttributeDescriptionModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributeDescriptionModelTests.swift; sourceTree = "<group>"; };
+		1A415A722339163200D4FD84 /* EntityJsonDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityJsonDecoderTests.swift; sourceTree = "<group>"; };
+		1A415A742339207200D4FD84 /* JsonDecoderPathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoderPathTests.swift; sourceTree = "<group>"; };
+		1A55202023259A8300D9D79A /* AttributeModel+Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttributeModel+Decoder.swift"; sourceTree = "<group>"; };
+		1A55202323259AAB00D9D79A /* RelationModel+Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RelationModel+Decoder.swift"; sourceTree = "<group>"; };
+		1A5520272325A5CB00D9D79A /* JsonDecoderPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoderPath.swift; sourceTree = "<group>"; };
+		1A55202B23264AE600D9D79A /* JsonDecoderStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoderStorage.swift; sourceTree = "<group>"; };
+		1A58FA0123244E7500BE09B9 /* AttributeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeModel.swift; sourceTree = "<group>"; };
+		1A58FA03232450BD00BE09B9 /* RelationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationModel.swift; sourceTree = "<group>"; };
+		1A58FA05232458AE00BE09B9 /* EntityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityModel.swift; sourceTree = "<group>"; };
+		1A58FA072324616200BE09B9 /* EntityObjectJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityObjectJsonDecoder.swift; sourceTree = "<group>"; };
+		1A58FA0A2324F10B00BE09B9 /* PropertyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyModel.swift; sourceTree = "<group>"; };
+		1A58FA0C2324F1CF00BE09B9 /* EntityJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityJsonDecoder.swift; sourceTree = "<group>"; };
+		1A58FA0E2324F95600BE09B9 /* PropertyModel+Attribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PropertyModel+Attribute.swift"; sourceTree = "<group>"; };
+		1A58FA112324FA5100BE09B9 /* PropertyModel+Relation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PropertyModel+Relation.swift"; sourceTree = "<group>"; };
+		1A58FA132325516200BE09B9 /* PropertyModel+Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PropertyModel+Property.swift"; sourceTree = "<group>"; };
+		1A58FA15232551F500BE09B9 /* PropertyModel+Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PropertyModel+Decoder.swift"; sourceTree = "<group>"; };
+		1A6C34EE2322D85100D457F8 /* ManagedObjectJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectJsonDecoder.swift; sourceTree = "<group>"; };
+		1A6C34F22322D8A300D457F8 /* RelationJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationJsonDecoder.swift; sourceTree = "<group>"; };
+		1A6C34F92322DD6000D457F8 /* AttributeJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeJsonDecoder.swift; sourceTree = "<group>"; };
+		1A91865223201AD600B3160E /* NSRelationshipDescription+JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRelationshipDescription+JsonDecoder.swift"; sourceTree = "<group>"; };
+		1A9554E32339742600495583 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A9554E42339742600495583 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1A9554E52339742600495583 /* PostSettings+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostSettings+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A9554E62339742600495583 /* PostSettings+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostSettings+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1A9554E72339742600495583 /* Profile+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A9554E82339742600495583 /* Profile+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1A9554E92339742600495583 /* Media+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Media+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A9554EA2339742600495583 /* Media+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Media+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1A9554EB2339742600495583 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A9554EC2339742600495583 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1AE94F8D2323BE4D00EB4114 /* NSAttributeDescription+JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributeDescription+JsonDecoder.swift"; sourceTree = "<group>"; };
+		1AE94F902323BF3100EB4114 /* ClosureCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureCacher.swift; sourceTree = "<group>"; };
+		1AE94F922323BFE400EB4114 /* NSEntityDescription+JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSEntityDescription+JsonDecoder.swift"; sourceTree = "<group>"; };
+		1AE94F942323C00100EB4114 /* NSPropertyDescription+JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPropertyDescription+JsonDecoder.swift"; sourceTree = "<group>"; };
+		1AE94F962323D6C800EB4114 /* ValueTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueTransformer.swift; sourceTree = "<group>"; };
+		1AF300C5232426F200C62D62 /* JsonDecoderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoderError.swift; sourceTree = "<group>"; };
+		"CoreDataJsonParser::CoreDataJsonParser::Product" /* CoreDataJsonParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreDataJsonParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"CoreDataJsonParser::CoreDataJsonParserTests::Product" /* CoreDataJsonParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = CoreDataJsonParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_12 /* CoreDataJsonParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataJsonParserTests.swift; sourceTree = "<group>"; };
+		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_43 /* CoreDataJsonParser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A3719DB2313E55500A23F14 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				1A3719DD2313E55500A23F14 /* Json+Subscription.swift */,
+				1A3719DE2313E55500A23F14 /* Json+Operators.swift */,
+				1A3719DF2313E55500A23F14 /* Json.swift */,
+				1A3719E02313E55500A23F14 /* JsonConvertable.swift */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		1A3719EE2313E55500A23F14 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1A3719F12313E55500A23F14 /* NSPredicate.swift */,
+				1AE94F962323D6C800EB4114 /* ValueTransformer.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1A55201F23259A6400D9D79A /* AttributeModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A58FA0123244E7500BE09B9 /* AttributeModel.swift */,
+				1A55202023259A8300D9D79A /* AttributeModel+Decoder.swift */,
+				1A1EB91D2333A9B800668C23 /* AttributeModel+ParseError.swift */,
+			);
+			path = AttributeModel;
+			sourceTree = "<group>";
+		};
+		1A55202223259A9B00D9D79A /* RelationModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A58FA03232450BD00BE09B9 /* RelationModel.swift */,
+				1A55202323259AAB00D9D79A /* RelationModel+Decoder.swift */,
+				1A1EB91F2333AA1600668C23 /* RelationModel+ParseError.swift */,
+			);
+			path = RelationModel;
+			sourceTree = "<group>";
+		};
+		1A55202523259B2C00D9D79A /* EntityModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A58FA05232458AE00BE09B9 /* EntityModel.swift */,
+			);
+			path = EntityModel;
+			sourceTree = "<group>";
+		};
+		1A55202A23264AD400D9D79A /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				1A55202B23264AE600D9D79A /* JsonDecoderStorage.swift */,
+				1A1DFC222334CBAE006D8C3C /* _JsonDecoderStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		1A58FA092324F0E700BE09B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A55202523259B2C00D9D79A /* EntityModel */,
+				1A58FA102324FA3800BE09B9 /* PropertyModel */,
+				1A55201F23259A6400D9D79A /* AttributeModel */,
+				1A55202223259A9B00D9D79A /* RelationModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A58FA102324FA3800BE09B9 /* PropertyModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A58FA0A2324F10B00BE09B9 /* PropertyModel.swift */,
+				1A58FA15232551F500BE09B9 /* PropertyModel+Decoder.swift */,
+				1A58FA132325516200BE09B9 /* PropertyModel+Property.swift */,
+				1A58FA0E2324F95600BE09B9 /* PropertyModel+Attribute.swift */,
+				1A58FA112324FA5100BE09B9 /* PropertyModel+Relation.swift */,
+			);
+			path = PropertyModel;
+			sourceTree = "<group>";
+		};
+		1A6C34ED2322D81000D457F8 /* JsonDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				1A6C34FD2322DEE000D457F8 /* Private */,
+				1A6C34FC2322DEB500D457F8 /* Public */,
+				1A3719EE2313E55500A23F14 /* Extensions */,
+				1AE94F8F2323BF2100EB4114 /* Helpers */,
+			);
+			path = JsonDecoder;
+			sourceTree = "<group>";
+		};
+		1A6C34FB2322DEAC00D457F8 /* PropertyJsonDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				1AE94F942323C00100EB4114 /* NSPropertyDescription+JsonDecoder.swift */,
+				1AE94F8D2323BE4D00EB4114 /* NSAttributeDescription+JsonDecoder.swift */,
+				1A91865223201AD600B3160E /* NSRelationshipDescription+JsonDecoder.swift */,
+			);
+			path = PropertyJsonDecoder;
+			sourceTree = "<group>";
+		};
+		1A6C34FC2322DEB500D457F8 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				1A6C34EE2322D85100D457F8 /* ManagedObjectJsonDecoder.swift */,
+				1A6C34F92322DD6000D457F8 /* AttributeJsonDecoder.swift */,
+				1A6C34F22322D8A300D457F8 /* RelationJsonDecoder.swift */,
+				1AF300C5232426F200C62D62 /* JsonDecoderError.swift */,
+				1A5520272325A5CB00D9D79A /* JsonDecoderPath.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		1A6C34FD2322DEE000D457F8 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				1A55202A23264AD400D9D79A /* Storage */,
+				1A58FA092324F0E700BE09B9 /* Models */,
+				1A6C35002322E31000D457F8 /* ManagedObjectJsonDecoder */,
+				1A6C34FB2322DEAC00D457F8 /* PropertyJsonDecoder */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		1A6C35002322E31000D457F8 /* ManagedObjectJsonDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				1A58FA0C2324F1CF00BE09B9 /* EntityJsonDecoder.swift */,
+				1A58FA072324616200BE09B9 /* EntityObjectJsonDecoder.swift */,
+				1AE94F922323BFE400EB4114 /* NSEntityDescription+JsonDecoder.swift */,
+				1A1EB9212333AC4E00668C23 /* EntityObjectJsonDecoder+ParseError.swift */,
+			);
+			path = ManagedObjectJsonDecoder;
+			sourceTree = "<group>";
+		};
+		1A9554F7233974FC00495583 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A9554E32339742600495583 /* Location+CoreDataClass.swift */,
+				1A9554E42339742600495583 /* Location+CoreDataProperties.swift */,
+				1A9554E52339742600495583 /* PostSettings+CoreDataClass.swift */,
+				1A9554E62339742600495583 /* PostSettings+CoreDataProperties.swift */,
+				1A9554E72339742600495583 /* Profile+CoreDataClass.swift */,
+				1A9554E82339742600495583 /* Profile+CoreDataProperties.swift */,
+				1A9554E92339742600495583 /* Media+CoreDataClass.swift */,
+				1A9554EA2339742600495583 /* Media+CoreDataProperties.swift */,
+				1A9554EB2339742600495583 /* Post+CoreDataClass.swift */,
+				1A9554EC2339742600495583 /* Post+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1AE94F8F2323BF2100EB4114 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1A3719E62313E55500A23F14 /* ParsableManagedObject.swift */,
+				1AE94F902323BF3100EB4114 /* ClosureCacher.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		OBJ_10 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* CoreDataJsonParserTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_11 /* CoreDataJsonParserTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A9554F7233974FC00495583 /* Models */,
+				1A415A622338E35B00D4FD84 /* JsonDecoderStorageTests.swift */,
+				1A371A0D2313E6EF00A23F14 /* JsonTests.swift */,
+				1A371A0B2313E6EF00A23F14 /* TestDataModel.xcdatamodeld */,
+				OBJ_12 /* CoreDataJsonParserTests.swift */,
+				OBJ_13 /* XCTestManifests.swift */,
+				1A415A652338E47400D4FD84 /* NSPersistentContainer.swift */,
+				1A415A682338E4B000D4FD84 /* TestJson.swift */,
+				1A415A6B2338F91100D4FD84 /* EntityModelTests.swift */,
+				1A415A6D2339025D00D4FD84 /* NSAttributeDescriptionModelTests.swift */,
+				1A415A722339163200D4FD84 /* EntityJsonDecoderTests.swift */,
+				1A415A742339207200D4FD84 /* JsonDecoderPathTests.swift */,
+			);
+			name = CoreDataJsonParserTests;
+			path = Tests/CoreDataJsonParserTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"CoreDataJsonParser::CoreDataJsonParserTests::Product" /* CoreDataJsonParserTests.xctest */,
+				"CoreDataJsonParser::CoreDataJsonParser::Product" /* CoreDataJsonParser.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_10 /* Tests */,
+				OBJ_14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* CoreDataJsonParser */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* CoreDataJsonParser */ = {
+			isa = PBXGroup;
+			children = (
+				1A6C34ED2322D81000D457F8 /* JsonDecoder */,
+				1A3719DB2313E55500A23F14 /* Json */,
+			);
+			name = CoreDataJsonParser;
+			path = Sources/CoreDataJsonParser;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"CoreDataJsonParser::CoreDataJsonParser" /* CoreDataJsonParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_18 /* Build configuration list for PBXNativeTarget "CoreDataJsonParser" */;
+			buildPhases = (
+				OBJ_21 /* Sources */,
+				OBJ_23 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataJsonParser;
+			productName = CoreDataJsonParser;
+			productReference = "CoreDataJsonParser::CoreDataJsonParser::Product" /* CoreDataJsonParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"CoreDataJsonParser::CoreDataJsonParserTests" /* CoreDataJsonParserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_36 /* Build configuration list for PBXNativeTarget "CoreDataJsonParserTests" */;
+			buildPhases = (
+				OBJ_39 /* Sources */,
+				OBJ_42 /* Frameworks */,
+				1A371A142313EA8600A23F14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_44 /* PBXTargetDependency */,
+			);
+			name = CoreDataJsonParserTests;
+			productName = CoreDataJsonParserTests;
+			productReference = "CoreDataJsonParser::CoreDataJsonParserTests::Product" /* CoreDataJsonParserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"CoreDataJsonParser::SwiftPMPackageDescription" /* CoreDataJsonParserPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_25 /* Build configuration list for PBXNativeTarget "CoreDataJsonParserPackageDescription" */;
+			buildPhases = (
+				OBJ_28 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataJsonParserPackageDescription;
+			productName = CoreDataJsonParserPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+				ORGANIZATIONNAME = "Alex Belozierov";
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "CoreDataJsonParser" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"CoreDataJsonParser::CoreDataJsonParser" /* CoreDataJsonParser */,
+				"CoreDataJsonParser::SwiftPMPackageDescription" /* CoreDataJsonParserPackageDescription */,
+				"CoreDataJsonParser::CoreDataJsonParserPackageTests::ProductTarget" /* CoreDataJsonParserPackageTests */,
+				"CoreDataJsonParser::CoreDataJsonParserTests" /* CoreDataJsonParserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A371A142313EA8600A23F14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				1AE94F972323D6C800EB4114 /* ValueTransformer.swift in Sources */,
+				1A371A062313E55500A23F14 /* NSPredicate.swift in Sources */,
+				1A1EB9222333AC4F00668C23 /* EntityObjectJsonDecoder+ParseError.swift in Sources */,
+				1AE94F932323BFE400EB4114 /* NSEntityDescription+JsonDecoder.swift in Sources */,
+				1A1DFC232334CBAE006D8C3C /* _JsonDecoderStorage.swift in Sources */,
+				1AF300C6232426F200C62D62 /* JsonDecoderError.swift in Sources */,
+				1A58FA16232551F500BE09B9 /* PropertyModel+Decoder.swift in Sources */,
+				1A58FA04232450BD00BE09B9 /* RelationModel.swift in Sources */,
+				1AE94F952323C00100EB4114 /* NSPropertyDescription+JsonDecoder.swift in Sources */,
+				1A55202423259AAB00D9D79A /* RelationModel+Decoder.swift in Sources */,
+				1A58FA0F2324F95600BE09B9 /* PropertyModel+Attribute.swift in Sources */,
+				1A55202123259A8300D9D79A /* AttributeModel+Decoder.swift in Sources */,
+				1AE94F8E2323BE4D00EB4114 /* NSAttributeDescription+JsonDecoder.swift in Sources */,
+				1A3719F82313E55500A23F14 /* Json.swift in Sources */,
+				1A1EB9202333AA1600668C23 /* RelationModel+ParseError.swift in Sources */,
+				1A5520282325A5CB00D9D79A /* JsonDecoderPath.swift in Sources */,
+				1A6C34EF2322D85100D457F8 /* ManagedObjectJsonDecoder.swift in Sources */,
+				1A1EB91E2333A9B800668C23 /* AttributeModel+ParseError.swift in Sources */,
+				1AE94F912323BF3100EB4114 /* ClosureCacher.swift in Sources */,
+				1A58FA122324FA5100BE09B9 /* PropertyModel+Relation.swift in Sources */,
+				1A58FA0B2324F10B00BE09B9 /* PropertyModel.swift in Sources */,
+				1A3719F62313E55500A23F14 /* Json+Subscription.swift in Sources */,
+				1A6C34F32322D8A300D457F8 /* RelationJsonDecoder.swift in Sources */,
+				1A58FA0223244E7500BE09B9 /* AttributeModel.swift in Sources */,
+				1A3719FD2313E55500A23F14 /* ParsableManagedObject.swift in Sources */,
+				1A3719F72313E55500A23F14 /* Json+Operators.swift in Sources */,
+				1A3719F92313E55500A23F14 /* JsonConvertable.swift in Sources */,
+				1A55202C23264AE600D9D79A /* JsonDecoderStorage.swift in Sources */,
+				1A58FA082324616200BE09B9 /* EntityObjectJsonDecoder.swift in Sources */,
+				1A58FA06232458AE00BE09B9 /* EntityModel.swift in Sources */,
+				1A6C34FA2322DD6000D457F8 /* AttributeJsonDecoder.swift in Sources */,
+				1A58FA0D2324F1CF00BE09B9 /* EntityJsonDecoder.swift in Sources */,
+				1A58FA142325516200BE09B9 /* PropertyModel+Property.swift in Sources */,
+				1A91865323201AD600B3160E /* NSRelationshipDescription+JsonDecoder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_29 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				1A9554EF2339742600495583 /* PostSettings+CoreDataClass.swift in Sources */,
+				1A9554ED2339742600495583 /* Location+CoreDataClass.swift in Sources */,
+				1A371A0F2313E6EF00A23F14 /* TestDataModel.xcdatamodeld in Sources */,
+				1A415A672338E49A00D4FD84 /* NSPersistentContainer.swift in Sources */,
+				1A415A6C2338F91100D4FD84 /* EntityModelTests.swift in Sources */,
+				1A9554F42339742600495583 /* Media+CoreDataProperties.swift in Sources */,
+				1A9554EE2339742600495583 /* Location+CoreDataProperties.swift in Sources */,
+				1A9554F32339742600495583 /* Media+CoreDataClass.swift in Sources */,
+				1A415A6A2338E4FF00D4FD84 /* TestJson.swift in Sources */,
+				1A415A642338E37C00D4FD84 /* JsonDecoderStorageTests.swift in Sources */,
+				1A9554F22339742600495583 /* Profile+CoreDataProperties.swift in Sources */,
+				1A9554F62339742600495583 /* Post+CoreDataProperties.swift in Sources */,
+				OBJ_40 /* CoreDataJsonParserTests.swift in Sources */,
+				OBJ_41 /* XCTestManifests.swift in Sources */,
+				1A415A752339207200D4FD84 /* JsonDecoderPathTests.swift in Sources */,
+				1A9554F12339742600495583 /* Profile+CoreDataClass.swift in Sources */,
+				1A415A6E2339025D00D4FD84 /* NSAttributeDescriptionModelTests.swift in Sources */,
+				1A371A102313E6EF00A23F14 /* JsonTests.swift in Sources */,
+				1A9554F52339742600495583 /* Post+CoreDataClass.swift in Sources */,
+				1A9554F02339742600495583 /* PostSettings+CoreDataProperties.swift in Sources */,
+				1A415A732339163200D4FD84 /* EntityJsonDecoderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "CoreDataJsonParser::CoreDataJsonParserTests" /* CoreDataJsonParserTests */;
+			targetProxy = 1A371A092313E55600A23F14 /* PBXContainerItemProxy */;
+		};
+		OBJ_44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "CoreDataJsonParser::CoreDataJsonParser" /* CoreDataJsonParser */;
+			targetProxy = 1A3719DA2313E54900A23F14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CoreDataJsonParser.xcodeproj/CoreDataJsonParser_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CoreDataJsonParser;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = CoreDataJsonParser;
+				TVOS_DEPLOYMENT_TARGET = "";
+				WATCHOS_DEPLOYMENT_TARGET = "";
+			};
+			name = Debug;
+		};
+		OBJ_20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CoreDataJsonParser.xcodeproj/CoreDataJsonParser_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CoreDataJsonParser;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = CoreDataJsonParser;
+				TVOS_DEPLOYMENT_TARGET = "";
+				WATCHOS_DEPLOYMENT_TARGET = "";
+			};
+			name = Release;
+		};
+		OBJ_26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CoreDataJsonParser.xcodeproj/CoreDataJsonParserTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = CoreDataJsonParserTests;
+				TVOS_DEPLOYMENT_TARGET = "";
+				WATCHOS_DEPLOYMENT_TARGET = "";
+			};
+			name = Debug;
+		};
+		OBJ_38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CoreDataJsonParser.xcodeproj/CoreDataJsonParserTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = CoreDataJsonParserTests;
+				TVOS_DEPLOYMENT_TARGET = "";
+				WATCHOS_DEPLOYMENT_TARGET = "";
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_18 /* Build configuration list for PBXNativeTarget "CoreDataJsonParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_19 /* Debug */,
+				OBJ_20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "CoreDataJsonParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_25 /* Build configuration list for PBXNativeTarget "CoreDataJsonParserPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_26 /* Debug */,
+				OBJ_27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_31 /* Build configuration list for PBXAggregateTarget "CoreDataJsonParserPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_32 /* Debug */,
+				OBJ_33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_36 /* Build configuration list for PBXNativeTarget "CoreDataJsonParserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_37 /* Debug */,
+				OBJ_38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A371A0B2313E6EF00A23F14 /* TestDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1A371A0C2313E6EF00A23F14 /* TestDataModel.xcdatamodel */,
+			);
+			currentVersion = 1A371A0C2313E6EF00A23F14 /* TestDataModel.xcdatamodel */;
+			path = TestDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
