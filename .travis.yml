@@ -2,6 +2,5 @@ language:
   - swift
 osx_image: xcode11
 script:
-  - xcodebuild -scheme CoreDataJsonParser -sdk iphonesimulator -destination "platform=iOS Simulator,OS=13.0,name=iPhone 11" build test
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - swift test
+#  - xcodebuild -scheme CoreDataJsonParser -sdk iphonesimulator -destination "platform=iOS Simulator,OS=13.0,name=iPhone 11" build test
