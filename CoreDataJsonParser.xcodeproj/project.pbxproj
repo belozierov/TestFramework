@@ -40,6 +40,8 @@
 		1A415A6E2339025D00D4FD84 /* NSAttributeDescriptionModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A6D2339025D00D4FD84 /* NSAttributeDescriptionModelTests.swift */; };
 		1A415A732339163200D4FD84 /* EntityJsonDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A722339163200D4FD84 /* EntityJsonDecoderTests.swift */; };
 		1A415A752339207200D4FD84 /* JsonDecoderPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A742339207200D4FD84 /* JsonDecoderPathTests.swift */; };
+		1A45EE88233A122D00D9CED6 /* ParseModel.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A45EE86233A122D00D9CED6 /* ParseModel.json */; };
+		1A45EE89233A122D00D9CED6 /* TestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A45EE87233A122D00D9CED6 /* TestJson.json */; };
 		1A55202123259A8300D9D79A /* AttributeModel+Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A55202023259A8300D9D79A /* AttributeModel+Decoder.swift */; };
 		1A55202423259AAB00D9D79A /* RelationModel+Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A55202323259AAB00D9D79A /* RelationModel+Decoder.swift */; };
 		1A5520282325A5CB00D9D79A /* JsonDecoderPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5520272325A5CB00D9D79A /* JsonDecoderPath.swift */; };
@@ -58,16 +60,6 @@
 		1A6C34F32322D8A300D457F8 /* RelationJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6C34F22322D8A300D457F8 /* RelationJsonDecoder.swift */; };
 		1A6C34FA2322DD6000D457F8 /* AttributeJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6C34F92322DD6000D457F8 /* AttributeJsonDecoder.swift */; };
 		1A91865323201AD600B3160E /* NSRelationshipDescription+JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91865223201AD600B3160E /* NSRelationshipDescription+JsonDecoder.swift */; };
-		1A9554ED2339742600495583 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554E32339742600495583 /* Location+CoreDataClass.swift */; };
-		1A9554EE2339742600495583 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554E42339742600495583 /* Location+CoreDataProperties.swift */; };
-		1A9554EF2339742600495583 /* PostSettings+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554E52339742600495583 /* PostSettings+CoreDataClass.swift */; };
-		1A9554F02339742600495583 /* PostSettings+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554E62339742600495583 /* PostSettings+CoreDataProperties.swift */; };
-		1A9554F12339742600495583 /* Profile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554E72339742600495583 /* Profile+CoreDataClass.swift */; };
-		1A9554F22339742600495583 /* Profile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554E82339742600495583 /* Profile+CoreDataProperties.swift */; };
-		1A9554F32339742600495583 /* Media+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554E92339742600495583 /* Media+CoreDataClass.swift */; };
-		1A9554F42339742600495583 /* Media+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554EA2339742600495583 /* Media+CoreDataProperties.swift */; };
-		1A9554F52339742600495583 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554EB2339742600495583 /* Post+CoreDataClass.swift */; };
-		1A9554F62339742600495583 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9554EC2339742600495583 /* Post+CoreDataProperties.swift */; };
 		1AE94F8E2323BE4D00EB4114 /* NSAttributeDescription+JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE94F8D2323BE4D00EB4114 /* NSAttributeDescription+JsonDecoder.swift */; };
 		1AE94F912323BF3100EB4114 /* ClosureCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE94F902323BF3100EB4114 /* ClosureCacher.swift */; };
 		1AE94F932323BFE400EB4114 /* NSEntityDescription+JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE94F922323BFE400EB4114 /* NSEntityDescription+JsonDecoder.swift */; };
@@ -75,7 +67,6 @@
 		1AE94F972323D6C800EB4114 /* ValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE94F962323D6C800EB4114 /* ValueTransformer.swift */; };
 		1AF300C6232426F200C62D62 /* JsonDecoderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF300C5232426F200C62D62 /* JsonDecoderError.swift */; };
 		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_40 /* CoreDataJsonParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* CoreDataJsonParserTests.swift */; };
 		OBJ_41 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
 		OBJ_43 /* CoreDataJsonParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "CoreDataJsonParser::CoreDataJsonParser::Product" /* CoreDataJsonParser.framework */; };
 /* End PBXBuildFile section */
@@ -117,6 +108,8 @@
 		1A415A6D2339025D00D4FD84 /* NSAttributeDescriptionModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributeDescriptionModelTests.swift; sourceTree = "<group>"; };
 		1A415A722339163200D4FD84 /* EntityJsonDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityJsonDecoderTests.swift; sourceTree = "<group>"; };
 		1A415A742339207200D4FD84 /* JsonDecoderPathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoderPathTests.swift; sourceTree = "<group>"; };
+		1A45EE86233A122D00D9CED6 /* ParseModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ParseModel.json; sourceTree = "<group>"; };
+		1A45EE87233A122D00D9CED6 /* TestJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJson.json; sourceTree = "<group>"; };
 		1A55202023259A8300D9D79A /* AttributeModel+Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttributeModel+Decoder.swift"; sourceTree = "<group>"; };
 		1A55202323259AAB00D9D79A /* RelationModel+Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RelationModel+Decoder.swift"; sourceTree = "<group>"; };
 		1A5520272325A5CB00D9D79A /* JsonDecoderPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoderPath.swift; sourceTree = "<group>"; };
@@ -135,16 +128,6 @@
 		1A6C34F22322D8A300D457F8 /* RelationJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationJsonDecoder.swift; sourceTree = "<group>"; };
 		1A6C34F92322DD6000D457F8 /* AttributeJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeJsonDecoder.swift; sourceTree = "<group>"; };
 		1A91865223201AD600B3160E /* NSRelationshipDescription+JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRelationshipDescription+JsonDecoder.swift"; sourceTree = "<group>"; };
-		1A9554E32339742600495583 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
-		1A9554E42339742600495583 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		1A9554E52339742600495583 /* PostSettings+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostSettings+CoreDataClass.swift"; sourceTree = "<group>"; };
-		1A9554E62339742600495583 /* PostSettings+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostSettings+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		1A9554E72339742600495583 /* Profile+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataClass.swift"; sourceTree = "<group>"; };
-		1A9554E82339742600495583 /* Profile+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		1A9554E92339742600495583 /* Media+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Media+CoreDataClass.swift"; sourceTree = "<group>"; };
-		1A9554EA2339742600495583 /* Media+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Media+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		1A9554EB2339742600495583 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
-		1A9554EC2339742600495583 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1AE94F8D2323BE4D00EB4114 /* NSAttributeDescription+JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributeDescription+JsonDecoder.swift"; sourceTree = "<group>"; };
 		1AE94F902323BF3100EB4114 /* ClosureCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureCacher.swift; sourceTree = "<group>"; };
 		1AE94F922323BFE400EB4114 /* NSEntityDescription+JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSEntityDescription+JsonDecoder.swift"; sourceTree = "<group>"; };
@@ -153,7 +136,6 @@
 		1AF300C5232426F200C62D62 /* JsonDecoderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoderError.swift; sourceTree = "<group>"; };
 		"CoreDataJsonParser::CoreDataJsonParser::Product" /* CoreDataJsonParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreDataJsonParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CoreDataJsonParser::CoreDataJsonParserTests::Product" /* CoreDataJsonParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = CoreDataJsonParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_12 /* CoreDataJsonParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataJsonParserTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -312,23 +294,6 @@
 			path = ManagedObjectJsonDecoder;
 			sourceTree = "<group>";
 		};
-		1A9554F7233974FC00495583 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				1A9554E32339742600495583 /* Location+CoreDataClass.swift */,
-				1A9554E42339742600495583 /* Location+CoreDataProperties.swift */,
-				1A9554E52339742600495583 /* PostSettings+CoreDataClass.swift */,
-				1A9554E62339742600495583 /* PostSettings+CoreDataProperties.swift */,
-				1A9554E72339742600495583 /* Profile+CoreDataClass.swift */,
-				1A9554E82339742600495583 /* Profile+CoreDataProperties.swift */,
-				1A9554E92339742600495583 /* Media+CoreDataClass.swift */,
-				1A9554EA2339742600495583 /* Media+CoreDataProperties.swift */,
-				1A9554EB2339742600495583 /* Post+CoreDataClass.swift */,
-				1A9554EC2339742600495583 /* Post+CoreDataProperties.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		1AE94F8F2323BF2100EB4114 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,11 +314,11 @@
 		OBJ_11 /* CoreDataJsonParserTests */ = {
 			isa = PBXGroup;
 			children = (
-				1A9554F7233974FC00495583 /* Models */,
+				1A45EE86233A122D00D9CED6 /* ParseModel.json */,
+				1A45EE87233A122D00D9CED6 /* TestJson.json */,
 				1A415A622338E35B00D4FD84 /* JsonDecoderStorageTests.swift */,
 				1A371A0D2313E6EF00A23F14 /* JsonTests.swift */,
 				1A371A0B2313E6EF00A23F14 /* TestDataModel.xcdatamodeld */,
-				OBJ_12 /* CoreDataJsonParserTests.swift */,
 				OBJ_13 /* XCTestManifests.swift */,
 				1A415A652338E47400D4FD84 /* NSPersistentContainer.swift */,
 				1A415A682338E4B000D4FD84 /* TestJson.swift */,
@@ -490,6 +455,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A45EE88233A122D00D9CED6 /* ParseModel.json in Resources */,
+				1A45EE89233A122D00D9CED6 /* TestJson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,26 +516,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				1A9554EF2339742600495583 /* PostSettings+CoreDataClass.swift in Sources */,
-				1A9554ED2339742600495583 /* Location+CoreDataClass.swift in Sources */,
 				1A371A0F2313E6EF00A23F14 /* TestDataModel.xcdatamodeld in Sources */,
 				1A415A672338E49A00D4FD84 /* NSPersistentContainer.swift in Sources */,
 				1A415A6C2338F91100D4FD84 /* EntityModelTests.swift in Sources */,
-				1A9554F42339742600495583 /* Media+CoreDataProperties.swift in Sources */,
-				1A9554EE2339742600495583 /* Location+CoreDataProperties.swift in Sources */,
-				1A9554F32339742600495583 /* Media+CoreDataClass.swift in Sources */,
 				1A415A6A2338E4FF00D4FD84 /* TestJson.swift in Sources */,
 				1A415A642338E37C00D4FD84 /* JsonDecoderStorageTests.swift in Sources */,
-				1A9554F22339742600495583 /* Profile+CoreDataProperties.swift in Sources */,
-				1A9554F62339742600495583 /* Post+CoreDataProperties.swift in Sources */,
-				OBJ_40 /* CoreDataJsonParserTests.swift in Sources */,
 				OBJ_41 /* XCTestManifests.swift in Sources */,
 				1A415A752339207200D4FD84 /* JsonDecoderPathTests.swift in Sources */,
-				1A9554F12339742600495583 /* Profile+CoreDataClass.swift in Sources */,
 				1A415A6E2339025D00D4FD84 /* NSAttributeDescriptionModelTests.swift in Sources */,
 				1A371A102313E6EF00A23F14 /* JsonTests.swift in Sources */,
-				1A9554F52339742600495583 /* Post+CoreDataClass.swift in Sources */,
-				1A9554F02339742600495583 /* PostSettings+CoreDataProperties.swift in Sources */,
 				1A415A732339163200D4FD84 /* EntityJsonDecoderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

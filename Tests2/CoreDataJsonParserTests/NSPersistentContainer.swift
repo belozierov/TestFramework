@@ -14,18 +14,12 @@ extension NSPersistentContainer {
     
     static let container: NSPersistentContainer = {
         ValueTransformer.registerIsoDateTransformer()
-        let bundle = Bundle(for: JsonTests.self)
-        let path = bundle.path(forResource: "TestDataModel", ofType: "momd")
-        let url = path.map { URL(fileURLWithPath: $0) }
-        let model = NSManagedObjectModel(contentsOf: url!)!
-        let container = NSPersistentContainer(name: "CoreDataJsonParserTests4",
-                                              managedObjectModel: model)
+        let container = NSPersistentContainer(name: "TestDataModel")
         container.loadPersistentStores { _, _ in }
         container.viewContext.undoManager = UndoManager()
         container.viewContext.performAndWait {
             Post.sharedJsonDecoder[\.createdDate].decodeStrategy =
                 .valueTransformer(name: NSValueTransformerName(rawValue: "IsoDate"))
-//            Post.sharedJsonDecoder[\.createdDate].decodeStrategy = .isoDate
             Post.sharedJsonDecoder[\.lastModifiedDate].decodeStrategy = .isoDate
             Media.sharedJsonDecoder[\.createdDate].decodeStrategy = .isoDate
             Media.sharedJsonDecoder[\.lastModifiedDate].decodeStrategy = .isoDate
@@ -48,7 +42,9 @@ extension XCTestCase {
     
     func performAndWaitOnViewContext(block: (NSManagedObjectContext) -> Void) {
         let context = NSManagedObjectContext.view
-        context.performAndWait { block(context) }
+        context.performAndWait {
+            block(context)
+        }
     }
     
 }

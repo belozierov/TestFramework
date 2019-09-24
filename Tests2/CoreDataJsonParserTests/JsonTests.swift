@@ -11,12 +11,7 @@ import XCTest
 
 class JsonTests: XCTestCase {
     
-    lazy var data: Data = {
-        let bundle = Bundle(for: JsonTests.self)
-        let path = bundle.path(forResource: "TestJson", ofType: "json")
-        let url = path.map { URL(fileURLWithPath: $0) }
-        return try! Data(contentsOf: url!)
-    }()
+    lazy var data = jsonString.data(using: .utf8)!
     
     func testJsonConvertable() {
         //Dictionary
@@ -137,3 +132,21 @@ class JsonTests: XCTestCase {
     }
     
 }
+
+private let jsonString =
+#"""
+{
+    "dict1": {
+        "dict2": {
+            "string": "Test string",
+            "int": 100,
+            "false": 0,
+            "true": true,
+            "arr": ["1", "2"]
+        }
+    },
+    "url": "https://www.google.com",
+    "null": null,
+    "seconds": 1406662283.764424
+}
+"""#
