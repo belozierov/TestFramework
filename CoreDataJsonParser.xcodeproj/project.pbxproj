@@ -35,13 +35,17 @@
 		1A371A102313E6EF00A23F14 /* JsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A371A0D2313E6EF00A23F14 /* JsonTests.swift */; };
 		1A415A642338E37C00D4FD84 /* JsonDecoderStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A622338E35B00D4FD84 /* JsonDecoderStorageTests.swift */; };
 		1A415A672338E49A00D4FD84 /* NSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A652338E47400D4FD84 /* NSPersistentContainer.swift */; };
-		1A415A6A2338E4FF00D4FD84 /* TestJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A682338E4B000D4FD84 /* TestJson.swift */; };
 		1A415A6C2338F91100D4FD84 /* EntityModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A6B2338F91100D4FD84 /* EntityModelTests.swift */; };
 		1A415A6E2339025D00D4FD84 /* NSAttributeDescriptionModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A6D2339025D00D4FD84 /* NSAttributeDescriptionModelTests.swift */; };
 		1A415A732339163200D4FD84 /* EntityJsonDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A722339163200D4FD84 /* EntityJsonDecoderTests.swift */; };
 		1A415A752339207200D4FD84 /* JsonDecoderPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A742339207200D4FD84 /* JsonDecoderPathTests.swift */; };
 		1A45EE88233A122D00D9CED6 /* ParseModel.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A45EE86233A122D00D9CED6 /* ParseModel.json */; };
 		1A45EE89233A122D00D9CED6 /* TestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A45EE87233A122D00D9CED6 /* TestJson.json */; };
+		1A45EE9B233A4F3300D9CED6 /* TestJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A415A682338E4B000D4FD84 /* TestJson.swift */; };
+		1A45EE9C233A4F3700D9CED6 /* IsoDateValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45EE96233A4EC800D9CED6 /* IsoDateValueTransformer.swift */; };
+		1A45EE9D233A4F3C00D9CED6 /* NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45EE8F233A4E6B00D9CED6 /* NSManagedObjectContext.swift */; };
+		1A45EE9E233A4F3E00D9CED6 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45EE91233A4E8600D9CED6 /* XCTestCase.swift */; };
+		1A45EE9F233A4F4200D9CED6 /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45EE98233A4EE300D9CED6 /* ISO8601DateFormatter.swift */; };
 		1A55202123259A8300D9D79A /* AttributeModel+Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A55202023259A8300D9D79A /* AttributeModel+Decoder.swift */; };
 		1A55202423259AAB00D9D79A /* RelationModel+Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A55202323259AAB00D9D79A /* RelationModel+Decoder.swift */; };
 		1A5520282325A5CB00D9D79A /* JsonDecoderPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5520272325A5CB00D9D79A /* JsonDecoderPath.swift */; };
@@ -110,6 +114,10 @@
 		1A415A742339207200D4FD84 /* JsonDecoderPathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoderPathTests.swift; sourceTree = "<group>"; };
 		1A45EE86233A122D00D9CED6 /* ParseModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ParseModel.json; sourceTree = "<group>"; };
 		1A45EE87233A122D00D9CED6 /* TestJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJson.json; sourceTree = "<group>"; };
+		1A45EE8F233A4E6B00D9CED6 /* NSManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContext.swift; sourceTree = "<group>"; };
+		1A45EE91233A4E8600D9CED6 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		1A45EE96233A4EC800D9CED6 /* IsoDateValueTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsoDateValueTransformer.swift; sourceTree = "<group>"; };
+		1A45EE98233A4EE300D9CED6 /* ISO8601DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601DateFormatter.swift; sourceTree = "<group>"; };
 		1A55202023259A8300D9D79A /* AttributeModel+Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttributeModel+Decoder.swift"; sourceTree = "<group>"; };
 		1A55202323259AAB00D9D79A /* RelationModel+Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RelationModel+Decoder.swift"; sourceTree = "<group>"; };
 		1A5520272325A5CB00D9D79A /* JsonDecoderPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoderPath.swift; sourceTree = "<group>"; };
@@ -177,6 +185,49 @@
 				1AE94F962323D6C800EB4114 /* ValueTransformer.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1A45EE8E233A4E5A00D9CED6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1A415A652338E47400D4FD84 /* NSPersistentContainer.swift */,
+				1A45EE8F233A4E6B00D9CED6 /* NSManagedObjectContext.swift */,
+				1A45EE91233A4E8600D9CED6 /* XCTestCase.swift */,
+				1A45EE98233A4EE300D9CED6 /* ISO8601DateFormatter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1A45EE95233A4EBF00D9CED6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_13 /* XCTestManifests.swift */,
+				1A45EE96233A4EC800D9CED6 /* IsoDateValueTransformer.swift */,
+				1A415A682338E4B000D4FD84 /* TestJson.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1A45EEA0233A4F9C00D9CED6 /* TestJsons */ = {
+			isa = PBXGroup;
+			children = (
+				1A45EE86233A122D00D9CED6 /* ParseModel.json */,
+				1A45EE87233A122D00D9CED6 /* TestJson.json */,
+			);
+			path = TestJsons;
+			sourceTree = "<group>";
+		};
+		1A45EEA1233A4FC100D9CED6 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1A415A622338E35B00D4FD84 /* JsonDecoderStorageTests.swift */,
+				1A371A0D2313E6EF00A23F14 /* JsonTests.swift */,
+				1A415A6B2338F91100D4FD84 /* EntityModelTests.swift */,
+				1A415A6D2339025D00D4FD84 /* NSAttributeDescriptionModelTests.swift */,
+				1A415A722339163200D4FD84 /* EntityJsonDecoderTests.swift */,
+				1A415A742339207200D4FD84 /* JsonDecoderPathTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		1A55201F23259A6400D9D79A /* AttributeModel */ = {
@@ -314,18 +365,11 @@
 		OBJ_11 /* CoreDataJsonParserTests */ = {
 			isa = PBXGroup;
 			children = (
-				1A45EE86233A122D00D9CED6 /* ParseModel.json */,
-				1A45EE87233A122D00D9CED6 /* TestJson.json */,
-				1A415A622338E35B00D4FD84 /* JsonDecoderStorageTests.swift */,
-				1A371A0D2313E6EF00A23F14 /* JsonTests.swift */,
+				1A45EEA1233A4FC100D9CED6 /* Tests */,
+				1A45EEA0233A4F9C00D9CED6 /* TestJsons */,
+				1A45EE95233A4EBF00D9CED6 /* Helpers */,
+				1A45EE8E233A4E5A00D9CED6 /* Extensions */,
 				1A371A0B2313E6EF00A23F14 /* TestDataModel.xcdatamodeld */,
-				OBJ_13 /* XCTestManifests.swift */,
-				1A415A652338E47400D4FD84 /* NSPersistentContainer.swift */,
-				1A415A682338E4B000D4FD84 /* TestJson.swift */,
-				1A415A6B2338F91100D4FD84 /* EntityModelTests.swift */,
-				1A415A6D2339025D00D4FD84 /* NSAttributeDescriptionModelTests.swift */,
-				1A415A722339163200D4FD84 /* EntityJsonDecoderTests.swift */,
-				1A415A742339207200D4FD84 /* JsonDecoderPathTests.swift */,
 			);
 			name = CoreDataJsonParserTests;
 			path = Tests/CoreDataJsonParserTests;
@@ -517,11 +561,15 @@
 			buildActionMask = 0;
 			files = (
 				1A371A0F2313E6EF00A23F14 /* TestDataModel.xcdatamodeld in Sources */,
+				1A45EE9D233A4F3C00D9CED6 /* NSManagedObjectContext.swift in Sources */,
 				1A415A672338E49A00D4FD84 /* NSPersistentContainer.swift in Sources */,
 				1A415A6C2338F91100D4FD84 /* EntityModelTests.swift in Sources */,
-				1A415A6A2338E4FF00D4FD84 /* TestJson.swift in Sources */,
+				1A45EE9E233A4F3E00D9CED6 /* XCTestCase.swift in Sources */,
+				1A45EE9C233A4F3700D9CED6 /* IsoDateValueTransformer.swift in Sources */,
+				1A45EE9B233A4F3300D9CED6 /* TestJson.swift in Sources */,
 				1A415A642338E37C00D4FD84 /* JsonDecoderStorageTests.swift in Sources */,
 				OBJ_41 /* XCTestManifests.swift in Sources */,
+				1A45EE9F233A4F4200D9CED6 /* ISO8601DateFormatter.swift in Sources */,
 				1A415A752339207200D4FD84 /* JsonDecoderPathTests.swift in Sources */,
 				1A415A6E2339025D00D4FD84 /* NSAttributeDescriptionModelTests.swift in Sources */,
 				1A371A102313E6EF00A23F14 /* JsonTests.swift in Sources */,

@@ -6,8 +6,8 @@
 //  Copyright © 2019 Alex Belozierov. All rights reserved.
 //
 
-import XCTest
-@testable import CoreDataJsonParser
+import Foundation
+import CoreDataJsonParser
 
 extension Json {
     
