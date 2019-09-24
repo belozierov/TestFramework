@@ -50,3 +50,27 @@ public func <~ <T: JsonConvertable>(left: inout T?, right: T?) throws {
     guard let value = right else { throw URLError(.cannotParseResponse) }
     left = value
 }
+
+extension Optional where Wrapped == Json {
+    
+    public func tryConvert<T: JsonConvertable>() throws -> T {
+        return try self?.tryConvert() ?? { throw URLError(.cannotParseResponse) }()
+    }
+    
+    public func tryMap<T>(_ transform: (Json) -> T?) throws -> T {
+        return try self?.tryMap(transform) ?? { throw URLError(.cannotParseResponse) }()
+    }
+    
+}
+
+extension Json {
+    
+    public func tryConvert<T: JsonConvertable>() throws -> T {
+        return try convert() ?? { throw URLError(.cannotParseResponse) }()
+    }
+    
+    public func tryMap<T>(_ transform: (Json) -> T?) throws -> T {
+        return try transform(self) ?? { throw URLError(.cannotParseResponse) }()
+    }
+    
+}
