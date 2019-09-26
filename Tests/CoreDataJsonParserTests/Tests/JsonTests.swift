@@ -136,4 +136,19 @@ class JsonTests: XCTestCase {
         XCTAssertNil(Json(value: 123)?.convert() as UUID?)
     }
     
+    func testTryMap() {
+        var json = Json(value: "abc")
+        XCTAssertEqual(try json?.tryConvert(), "abc")
+        XCTAssertEqual(try json.tryConvert(), "abc")
+        XCTAssertNil(try? json.tryConvert() as Int)
+        XCTAssertNil(try? json?.tryConvert() as Int?)
+        XCTAssertEqual(try json?.tryMap { $0.convert() }, "abc")
+        XCTAssertEqual(try json.tryMap { $0.convert() }, "abc")
+        XCTAssertNil(try? json.tryMap { $0.convert() } as Int)
+        XCTAssertNil(try? json?.tryMap { $0.convert() } as Int?)
+        json = nil
+        XCTAssertNil(try? json.tryConvert() as Int)
+        XCTAssertNil(try? json.tryMap { $0.convert() } as Int)
+    }
+    
 }
